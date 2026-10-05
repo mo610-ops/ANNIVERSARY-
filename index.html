@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Months With My Shosho ❤️</title>
+<style>
+:root{
+  --pink:#ff5c8a; --deep:#8f244e; --cream:#fff8f4; --rose:#ffd9e5;
+  --text:#54263a; --glass:rgba(255,255,255,.62);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  color:var(--text); background:linear-gradient(135deg,#fff0f5,#fffaf4 45%,#ffe2ec);
+  overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;
+  background-image:radial-gradient(#ff8fb0 1px,transparent 1px);
+  background-size:30px 30px;
+}
+section{min-height:100vh;padding:80px 20px;display:flex;align-items:center;justify-content:center;position:relative}
+.container{width:min(1050px,100%);text-align:center}
+.glass{
+  background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.75);box-shadow:0 20px 60px rgba(143,36,78,.12);
+  border-radius:30px;padding:35px;
+}
+h1{font-size:clamp(3rem,10vw,7rem);color:var(--deep);line-height:.95}
+h2{font-size:clamp(2rem,6vw,4rem);margin-bottom:18px;color:var(--deep)}
+p{font-size:1.12rem;line-height:1.8}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:.8rem;color:#b7466d;margin-bottom:18px}
+.hero-heart{font-size:5rem;animation:beat 1.2s infinite;margin:25px}
+@keyframes beat{50%{transform:scale(1.18)}}
+button{
+  border:0;border-radius:999px;padding:15px 25px;margin:10px;
+  background:linear-gradient(135deg,#ff5c8a,#c83268);color:white;font-size:1rem;
+  cursor:pointer;box-shadow:0 10px 25px rgba(200,50,104,.25);transition:.25s;
+}
+button:hover{transform:translateY(-3px) scale(1.03)}
+.scroll{margin-top:25px;font-size:.9rem;opacity:.7}
+.counter-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.box{background:rgba(255,255,255,.72);border-radius:22px;padding:22px 10px}
+.num{font-size:2.3rem;font-weight:bold;color:var(--deep)}
+.label{font-size:.78rem;text-transform:uppercase;letter-spacing:1px;margin-top:5px}
+.timeline{display:grid;gap:15px;margin-top:25px;text-align:left}
+.card{padding:22px;border-radius:22px;background:rgba(255,255,255,.68);border-left:5px solid var(--pink)}
+.surprises{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.surprise{min-height:190px;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.hidden{display:none;margin-top:15px;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.letter{max-width:800px;margin:auto;text-align:left;font-size:1.15rem}
+.letter p{margin:14px 0}
+.final{
+  background:linear-gradient(145deg,#6e183d,#a82e5e 50%,#4d1230);color:white;
+}
+.final h2,.final p{color:white}
+.proposal{margin-top:35px;padding:30px;border-radius:28px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25)}
+.proposal .num{color:#ffd4e1}
+footer{padding:30px;text-align:center;background:#4d1230;color:#ffe4ed}
+.float-heart{position:fixed;bottom:-30px;font-size:20px;pointer-events:none;animation:float 6s linear forwards;z-index:20}
+@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+@media(max-width:700px){
+  .counter-grid{grid-template-columns:repeat(2,1fr)}
+  .surprises{grid-template-columns:1fr}
+  section{padding:60px 14px}
+  .glass{padding:25px 18px}
+}
+</style>
+</head>
+<body>
+
+<section>
+  <div class="container">
+    <div class="kicker">May 6, 2026 → Forever</div>
+    <h1>5 Months<br>With My Shosho ❤️</h1>
+    <div class="hero-heart">💗</div>
+    <p>Five months of choosing you, loving you, annoying you, laughing with you… and somehow loving you even more every day.</p>
+    <button onclick="document.getElementById('together').scrollIntoView()">Open Our Little World ↓</button>
+    <div class="scroll">A tiny virtual anniversary made by your lovely bf, Modyy.</div>
+  </div>
+</section>
+
+<section id="together">
+  <div class="container glass">
+    <div class="kicker">Our Time Together</div>
+    <h2>Every day counts.</h2>
+    <p>Our virtual marriage may not be a real-world marriage, but the love and memories we make together are real to me. ❤️</p>
+    <div class="counter-grid">
+      <div class="box"><div class="num" id="days">0</div><div class="label">Days</div></div>
+      <div class="box"><div class="num" id="hours">0</div><div class="label">Hours</div></div>
+      <div class="box"><div class="num" id="minutes">0</div><div class="label">Minutes</div></div>
+      <div class="box"><div class="num" id="seconds">0</div><div class="label">Seconds</div></div>
+    </div>
+    <p style="margin-top:20px">Together since <strong>May 6, 2026</strong> 💞</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="kicker">Five Little Chapters</div>
+    <h2>Our first 5 months 💌</h2>
+    <div class="timeline">
+      <div class="card"><strong>Month 1 🌷</strong><br>The beginning of our little forever.</div>
+      <div class="card"><strong>Month 2 🦋</strong><br>More laughs, more memories, more reasons to smile.</div>
+      <div class="card"><strong>Month 3 🌙</strong><br>Somehow, you became an even bigger part of my world.</div>
+      <div class="card"><strong>Month 4 💕</strong><br>Four months, countless moments, and one very happy Modyy.</div>
+      <div class="card"><strong>Month 5 💖</strong><br>Here we are. Still us. Still choosing each other.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container glass">
+    <div class="kicker">Don't Open Everything At Once 👀</div>
+    <h2>Surprise buttons</h2>
+    <div class="surprises">
+      <div class="box surprise">
+        <div style="font-size:3rem">💌</div>
+        <button onclick="reveal('s1')">Open My Secret</button>
+        <p id="s1" class="hidden">If I could choose one person to annoy forever… congratulations, you won. 😂❤️</p>
+      </div>
+      <div class="box surprise">
+        <div style="font-size:3rem">🌹</div>
+        <button onclick="reveal('s2')">A Little Truth</button>
+        <p id="s2" class="hidden">You make ordinary days feel like something worth remembering.</p>
+      </div>
+      <div class="box surprise">
+        <div style="font-size:3rem">🎁</div>
+        <button onclick="reveal('s3')">One More</button>
+        <p id="s3" class="hidden">My favorite place isn't a place. It's any moment where it's just me and you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container glass">
+    <div class="kicker">A Letter For My Shosho</div>
+    <h2>Dear Shosho,</h2>
+    <div class="letter">
+      <p>I don't need a perfect story to be happy. I just want our story — the silly moments, the sweet ones, the random conversations, the little arguments, the laughs, and all the memories we haven't made yet.</p>
+      <p>Five months might sound like a small number, but to me it's five months of having someone who became incredibly special to my heart.</p>
+      <p>So today isn't just about saying “happy 5 months.” It's about saying <strong>thank you for being my Shosho.</strong> ❤️</p>
+      <p>And if you ever wonder how serious I am about all these monthly celebrations… just keep scrolling.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="container">
+    <div class="kicker" style="color:#ffc0d2">The Promise</div>
+    <h2>And now… one last surprise.</h2>
+    <p>There is a date waiting for us in the future.</p>
+
+    <div class="proposal">
+      <div class="kicker" style="color:#ffd4e1">May 6, 2033</div>
+      <h2>Our Big Day 💍</h2>
+      <p>Until then, let's keep celebrating May 6th every year, every month, every little milestone — and keep making our story ours.</p>
+      <div class="counter-grid">
+        <div class="box"><div class="num" id="pDays">0</div><div class="label">Days</div></div>
+        <div class="box"><div class="num" id="pHours">0</div><div class="label">Hours</div></div>
+        <div class="box"><div class="num" id="pMinutes">0</div><div class="label">Minutes</div></div>
+        <div class="box"><div class="num" id="pSeconds">0</div><div class="label">Seconds</div></div>
+      </div>
+    </div>
+
+    <div style="margin:40px auto;max-width:800px">
+      <p style="font-size:1.35rem;line-height:2">
+        “After 7 years from now, I'll propose to you, my Shosho, on May 6th,
+        and I'll keep celebrating this date until the day I die.”
+      </p>
+      <p style="margin-top:20px;font-size:1.15rem">From your lovely bf,</p>
+      <h2 style="margin-top:5px">Modyy ❤️</h2>
+    </div>
+    <button onclick="celebrate()">One Last Surprise ✨</button>
+  </div>
+</section>
+
+<footer>Made with love for Shosho • May 6, 2026 → May 6, 2033 → Forever ❤️</footer>
+
+<script>
+const start = new Date("2026-05-06T00:00:00");
+const proposal = new Date("2033-05-06T00:00:00");
+
+function pad(n){return String(Math.max(0,Math.floor(n))).padStart(2,"0");}
+
+function update(){
+  const now = new Date();
+
+  let diff = Math.max(0, now-start);
+  const d=Math.floor(diff/86400000); diff%=86400000;
+  const h=Math.floor(diff/3600000); diff%=3600000;
+  const m=Math.floor(diff/60000); const s=Math.floor((diff%60000)/1000);
+  document.getElementById("days").textContent=d;
+  document.getElementById("hours").textContent=pad(h);
+  document.getElementById("minutes").textContent=pad(m);
+  document.getElementById("seconds").textContent=pad(s);
+
+  let pd=Math.max(0,proposal-now);
+  const dd=Math.floor(pd/86400000); pd%=86400000;
+  const hh=Math.floor(pd/3600000); pd%=3600000;
+  const mm=Math.floor(pd/60000); const ss=Math.floor((pd%60000)/1000);
+  document.getElementById("pDays").textContent=dd;
+  document.getElementById("pHours").textContent=pad(hh);
+  document.getElementById("pMinutes").textContent=pad(mm);
+  document.getElementById("pSeconds").textContent=pad(ss);
+}
+setInterval(update,1000); update();
+
+function reveal(id){
+  const el=document.getElementById(id);
+  el.classList.toggle("hidden");
+}
+
+function heart(){
+  const h=document.createElement("div");
+  h.className="float-heart";
+  h.textContent=["❤️","💗","💕","💖","💘","🌸"][Math.floor(Math.random()*6)];
+  h.style.left=Math.random()*100+"vw";
+  h.style.animationDuration=(4+Math.random()*4)+"s";
+  h.style.fontSize=(16+Math.random()*25)+"px";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),8000);
+}
+setInterval(heart,700);
+
+function celebrate(){
+  for(let i=0;i<35;i++) setTimeout(heart,i*70);
+  alert("Happy 5 Months, Shosho! ❤️\n\nMay 6th is our little forever date. See you on May 6, 2033… 💍");
+}
+</script>
+</body>
+</html>
